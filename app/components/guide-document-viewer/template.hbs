@@ -1,0 +1,20 @@
+
+
+<div class="guideDocumentViewer">
+  <div class="guideDocumentViewerContent">
+    <div class="guideDocumentViewerUpdated">
+      Updated: {{moment-format guide.updated}}
+    </div>
+    <h1 class="guideDocumentViewerTitle">{{guide.title}}</h1>
+    <div class="guideDocumentViewerBody">
+      {{markdown-to-html
+        markdown=guide.body
+        tables=true
+        ghCodeBlocks=true
+        tasklists=true
+        smoothLivePreview=true
+      }}
+    </div>
+  </div>
+
+</div>

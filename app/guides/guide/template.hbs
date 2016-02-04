@@ -1,0 +1,13 @@
+<div class="actions-bar">
+  {{#link-to 'edit-guide' model.id class="actions-bar-button"}}
+    <button type="button" name="button">Edit</button>
+  {{/link-to}}
+</div>
+
+<div id="guide-preview-wrapper">
+
+  <div id="guideDocumentViewerWrapper">
+    {{guide-document-viewer guide=model}}
+  </div>
+  
+</div>

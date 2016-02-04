@@ -1,0 +1,12 @@
+<nav id="app-nav">
+  {{#link-to 'index' id="app-nav-logo"}}
+    Admin
+  {{/link-to}}
+  <div id="app-nav-links">
+    {{#link-to 'index' class="app-nav-link"}}Home{{/link-to}}
+    {{#link-to 'guides' class="app-nav-link"}}Guides{{/link-to}}
+  </div>
+</nav>
+<main id="main-view">
+  {{outlet}}
+</main>

@@ -1,0 +1,41 @@
+
+<div id="guides-wrapper">
+
+  <div class="actions-bar">
+
+    {{#link-to 'new-guide' id="createNewGuide"}}
+      <button type="button" name="button">Create</button>
+    {{/link-to}}
+
+    <div id="searchQuery">
+      {{input value=searchQuery
+        placeholder="Filter for guide here..."
+      }}
+    </div>
+
+  </div>
+
+  <div id="guides">
+
+    {{#each filteredContent as |guide|}}
+      {{#link-to 'guides.guide' guide.id class="guide"}}
+
+        <div class="guide-updated">
+          Last updated: {{moment-format guide.updated}}
+        </div>
+
+        <div class="guide-title">
+          {{guide.title}}
+        </div>
+
+      {{/link-to}}
+    {{/each}}
+
+  </div>
+</div>
+
+<div id="guide-preview">
+
+  {{outlet}}
+
+</div>

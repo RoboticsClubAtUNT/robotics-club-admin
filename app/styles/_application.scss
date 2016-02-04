@@ -1,0 +1,86 @@
+$untGreen: #249032;
+$untGreen2: #61B62B;
+$untGreen3: #82C01F;
+$roboBlack: #434343;
+$roboWhite: #f4f4f4;
+
+body {
+  // struct
+  margin: 0;
+  padding: 0;
+  // style
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+code {
+  font-family: "Roboto Mono", monospace;
+}
+
+$appNavWidth: 200px;
+
+#app-nav {
+  // struct
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $appNavWidth;
+  // style
+  background: #2C303A;
+
+  &-logo {
+    // struct
+    display: block;
+    height: 50px;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    font-size: 24px;
+    // style
+    color: white;
+    background: $untGreen;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &-links {
+    // struct
+    // style
+    color: $roboWhite;
+
+    a {
+      // struct
+      width: 100%;
+      display: block;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      // style
+      text-decoration: none;
+      color: $roboWhite;
+
+      &.active {
+        color: $untGreen3;
+      }
+    }
+  }
+}
+
+#main-view {
+  // struct
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: $appNavWidth;
+  bottom: 0;
+  // style
+}

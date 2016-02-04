@@ -1,0 +1,140 @@
+#guides-wrapper {
+  // struct
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  width: 400px;
+  // style
+  // background: #eee;
+  border-right: #aaa thin solid;
+
+  .actions-bar {
+    position: absolute;
+    top:0;
+    height: 50px;
+    width: 100%;
+    border-bottom: #ddd thin solid;
+
+    #createNewGuide {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      padding: 10px;
+      padding-right: 0;
+      box-sizing: border-box;
+
+      button {
+        width: 100%;
+        height: 100%;
+        background: $untGreen2;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
+        letter-spacing: 1px;
+      }
+    }
+
+    #searchQuery {
+      position: absolute;
+      right: 0;
+      left: 100px;
+      top: 0;
+      bottom: 0;
+      padding: 10px;
+      box-sizing: border-box;
+
+      input {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 100%;
+        border: #ddd thin solid;
+        border-radius: 3px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+}
+
+#guides {
+
+  // struct
+  position: absolute;
+  top:51px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  // style
+
+  .guide {
+    // struct
+    border-bottom: #ddd thin solid;
+    padding: 10px;
+    display: block;
+    // style
+    color: #434343;
+    text-decoration: none;
+
+    &.active {
+      background: #f4f4f4;
+    }
+
+    &-updated {
+      // struct
+      font-size: 10px;
+      letter-spacing: 1px;
+      // style
+    }
+
+    &-title {
+      // struct
+      font-size: 16px;
+      // style
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
+}
+
+
+#guide-preview {
+  // struct
+  position: absolute;
+  top: 0;
+  left: 400px;
+  right: 0;
+  bottom: 0;
+  // style
+
+  .actions-bar {
+    position: absolute;
+    top:0;
+    height: 50px;
+    width: 100%;
+    border-bottom: #ddd thin solid;
+  }
+
+  #guide-preview-wrapper {
+    /// struct
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // style
+  }
+
+  #guideDocumentViewerWrapper {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}

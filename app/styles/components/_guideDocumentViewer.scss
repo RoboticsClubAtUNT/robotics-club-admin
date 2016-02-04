@@ -1,0 +1,44 @@
+.guideDocumentViewer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+
+
+  .guideDocumentViewerContent {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  p {
+    line-height: 1.4;
+
+
+
+
+  }
+
+  a {
+    color: $untGreen;
+  }
+
+  pre {
+    background: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: auto;
+
+    code {
+      font-size: 12px;
+    }
+  }
+
+
+}

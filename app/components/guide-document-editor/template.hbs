@@ -1,0 +1,15 @@
+<form class="guideDocumentEditor">
+
+  <div class="guideDocumentEditorTitle">
+    {{input value=title placeholder="Enter your guide's title here..."}}
+  </div>
+
+  <div class="guideDocumentEditorBody">
+    {{textarea value=body placeholder="Paste your markdown here..."}}
+  </div>
+
+  <div class="guideDocumentEditorCreate">
+    <button type="button" name="button" {{action 'submitGuide'}}>Create Guide</button>
+  </div>
+
+</form>
