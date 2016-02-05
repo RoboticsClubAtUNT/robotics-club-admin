@@ -2,6 +2,8 @@
   {{#link-to 'edit-guide' model.id class="actions-bar-button"}}
     <button type="button" name="button">Edit</button>
   {{/link-to}}
+
+  <button type="button" name="button" {{action 'deleteGuide'}}>Delete</button>
 </div>
 
 <div id="guide-preview-wrapper">
@@ -9,5 +11,5 @@
   <div id="guideDocumentViewerWrapper">
     {{guide-document-viewer guide=model}}
   </div>
-  
+
 </div>
