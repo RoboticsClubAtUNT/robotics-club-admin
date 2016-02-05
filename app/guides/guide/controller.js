@@ -12,9 +12,12 @@ actions: {
     var guide = this.get('model');
     var store = this.store;
 
+    var url = this.store.adapterFor('application').get('host') + "/api/v2/guides/";
+    url += guide.id;
+
     Ember.$.ajax({
       type: "DELETE",
-      url: 'http://localhost:8080/api/v2/guides/' + guide.id,
+      url: url
       // data: guide,
       // dataType: "json"
     }).done(function() {

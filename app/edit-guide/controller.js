@@ -20,9 +20,12 @@ export default Ember.Controller.extend({
         }
       };
 
+      var url = this.store.adapterFor('application').get('host') + "/api/v2/guides/";
+      url += this.get('model').id;
+
       Ember.$.ajax({
         type: "PATCH",
-        url: 'http://localhost:8080/api/v2/guides/' + this.get('model').id,
+        url: url,
         data: guide,
         dataType: "json"
       }).done(function() {
