@@ -1,9 +1,7 @@
 <div class="actions-bar">
-  {{#link-to 'edit-guide' model.id class="actions-bar-button"}}
-    <button type="button" name="button">Edit</button>
-  {{/link-to}}
 
-  <button type="button" name="button" {{action 'deleteGuide'}}>Delete</button>
+    <button type="button" name="button" class="actions-bar-button">  {{#link-to 'edit-guide' model.id}}Edit{{/link-to}}</button>
+  <button type="button" name="button" class="actions-bar-button" {{action 'toggleDeleteModal'}}>Delete</button>
 </div>
 
 <div id="guide-preview-wrapper">
@@ -12,4 +10,18 @@
     {{guide-document-viewer guide=model}}
   </div>
 
+
+
 </div>
+
+{{#if deleteModalIsShowing}}
+  {{#confirmation-modal}}
+    <h1>Are you sure?</h1>
+    <p>
+      This will delete the guide forever!
+    </p>
+    <button type="button" name="button" class="confirmationModalButton delete" {{action 'deleteGuide'}}>Delete</button>
+    <button type="button" name="button" class="confirmationModalButton" {{action 'toggleDeleteModal'}}>Cancel</button>
+  {{/confirmation-modal}}
+
+{{/if}}

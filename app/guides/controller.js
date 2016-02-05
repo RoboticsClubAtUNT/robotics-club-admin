@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 
   searchQuery: '',
+  toggleDeleteModal: true,
 
   filteredContent: Ember.computed('model.[]', 'searchQuery', function() {
     var filter = this.get("searchQuery");
