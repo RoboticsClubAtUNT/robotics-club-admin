@@ -8,6 +8,8 @@
   right: 0;
   overflow: scroll;
 
+  color: #434343;
+
 
   .guideDocumentViewerContent {
     width: 100%;
@@ -15,12 +17,14 @@
     margin: 0 auto;
   }
 
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+  }
+
   p {
     line-height: 1.4;
-
-
-
-
   }
 
   a {

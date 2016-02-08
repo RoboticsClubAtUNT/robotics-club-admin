@@ -1,7 +1,7 @@
 <div class="actions-bar">
 
-    <button type="button" name="button" class="actions-bar-button">  {{#link-to 'edit-guide' model.id}}Edit{{/link-to}}</button>
-  <button type="button" name="button" class="actions-bar-button" {{action 'toggleDeleteModal'}}>Delete</button>
+      {{#link-to 'edit-guide' model.id class="actions-bar-button" tagName="button"}}Edit{{/link-to}}
+    <button type="button" name="button" class="actions-bar-button" {{action 'toggleDeleteModal'}}>Delete</button>
 </div>
 
 <div id="guide-preview-wrapper">
