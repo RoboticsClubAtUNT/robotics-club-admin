@@ -1,1 +1,31 @@
-// test
+.loginForm {
+  width: 400px;
+  margin: 100px auto;
+  .loginFormSegment {
+    box-sizing: border-box;
+    label {
+      margin: 10px 0;
+      font-family: "Roboto Condensed";
+      display: block;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 16px;
+      border: #ddd thin solid;
+      background: none;
+    }
+    .loginFormSubmit {
+      margin: 20px 0;
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: #ddd thin solid;
+      background: none;
+    }
+  }
+
+}

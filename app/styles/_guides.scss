@@ -113,21 +113,40 @@
   bottom: 0;
   // style
 
+  #guide-preview-placeholder {
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 42px;
+    color: #ddd;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    border: #ddd thin solid;
+    border-radius: 3px;
+  }
+
   .actions-bar {
     position: absolute;
     top:0;
     height: 50px;
-    width: 100%;
+    left: 1px;
+    right: 0;
+    background-color: white;
     border-bottom: #ddd thin solid;
+
   }
 
   #guide-preview-wrapper {
+    z-index: 800;
     /// struct
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 51px;
+    left: 1px;
     right: 0;
     bottom: 0;
+    background: white;
     // style
   }
 

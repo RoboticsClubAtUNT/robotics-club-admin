@@ -20,7 +20,14 @@ export default Ember.Controller.extend({
         }
       };
 
-      var url = this.store.adapterFor('application').get('host') + "/api/v2/guides/";
+      var url = "";
+      var host = this.store.adapterFor('application').get('host');
+
+      if (host) {
+        url += host;
+      }
+
+      url += "/api/v2/guides/";
       url += this.get('model').id;
 
       Ember.$.ajax({

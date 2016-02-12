@@ -28,7 +28,15 @@ export default Ember.Controller.extend({
       //   self.transitionToRoute('guides');
       // });
 
-      var url = this.store.adapterFor('application').get('host') + "/api/v2/guides";
+      var url = "";
+      var host = this.store.adapterFor('application').get('host');
+
+      if (host) {
+        url += host;
+      }
+
+      url += "/api/v2/guides/";
+
 
       var self = this;
 

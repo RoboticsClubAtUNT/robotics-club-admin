@@ -1,1 +1,14 @@
-Home
+<form class="" action="index.html" method="post" class="loginForm">
+  <div class="loginFormSegment">
+    <label for="">User</label>
+    {{input value=username}}
+  </div>
+  <div class="loginFormSegment">
+    <label for="">Secret</label>
+    {{input value=password type="password"}}
+  </div>
+  <div class="loginFormSegment">
+    <button type="button" class="loginFormSubmit" {{action 'authenticate'}}>Sign In</button>
+  </div>
+
+</form>
