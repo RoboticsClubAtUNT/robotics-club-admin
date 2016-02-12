@@ -12,7 +12,14 @@ actions: {
     var guide = this.get('model');
     var store = this.store;
 
-    var url = this.store.adapterFor('application').get('host') + "/api/v2/guides/";
+    var url = "";
+    var host = this.store.adapterFor('application').get('host');
+
+    if (host) {
+      url += host;
+    }
+
+    url += "/api/v2/guides/";
     url += guide.id;
 
     Ember.$.ajax({
