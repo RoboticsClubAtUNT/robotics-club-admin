@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('new-guide', { path: '/guides/new' });
   this.route('edit-guide', { path: '/guides/edit/:id' });
+  this.route('membership-requests');
 });
 
 export default Router;

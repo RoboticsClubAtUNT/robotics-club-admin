@@ -1,0 +1,69 @@
+
+#membership-requests {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    text-align: left;
+    &:last-child {
+      text-align: center;
+    }
+  }
+}
+
+.membership-request {
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  td {
+    border-bottom: #ddd thin solid;
+    button {
+      height: 40px;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 24px;
+      color: #777;
+      background: none;
+      border:none;
+      &:hover {
+        color: #E74C3C;
+        cursor: pointer;
+      }
+    }
+  }
+  &:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}
+
+#membership-requests-actions {
+  height: 50px;
+  border-bottom: #ddd thin solid;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#membership-requests-stats {
+  height: 50px;
+  border-bottom: #ddd thin solid;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #f4f4f4;
+}
+
+#num-of-membership-requests {
+    color: white;
+    background: #E74C3C;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 9px;
+}
+
+.membership-request-logo {
+  font-size: 20px;
+}

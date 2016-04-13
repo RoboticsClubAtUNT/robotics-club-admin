@@ -1,0 +1,42 @@
+
+<div id="membership-requests-actions">
+  <span>Membership Requests</span>
+</div>
+
+<div id="membership-requests-stats">
+  <span id="num-of-membership-requests">{{model.length}}</span>
+  Requests Pending
+</div>
+
+<div id="membership-requests">
+  <table>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>EUID</th>
+      <th>Email</th>
+      <th>Request Date</th>
+      <th>Actions</th>
+    </tr>
+
+    {{#each model as |request|}}
+      <tr class="membership-request">
+        <td class="membership-request-logo">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </td>
+        <td class="membership-request-name">
+          {{request.name}}
+        </td>
+        <td class="membership-request-euid">{{request.euid}}</td>
+        <td class="membership-request-email">{{request.email}}</td>
+        <td class="membership-request-date">{{moment-format requests.created}}</td>
+        <td class="membership-request-actions">
+          <button type="button" name="button">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+        </td>
+      </tr>
+    {{/each}}
+
+  </table>
+</div>
